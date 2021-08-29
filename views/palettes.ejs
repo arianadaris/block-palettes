@@ -1,0 +1,59 @@
+<%- include('./partials/header'); %>
+<div class="content-wrapper">
+    <div class="content">
+        <h1 class="test">Palettes</h1>
+        <div class="palettes-page">
+            <div class="palettes">
+                <% if (palettesList.length > 0) { %>
+                <% for(var i = 0; i < palettesList.length; i++){ %>
+                    <div class="palette-wrapper" id="<%= palettesList[i].paletteID %>">
+                        <div class="palette">
+                            <% for(var j = 0; j < 6; j++) { %>
+                            <div class="block">
+                                <a href="/palettes?search=<%= palettesList[i].blocks[j].name %>"><img src="images/blocks/<%= palettesList[i].blocks[j].img %>" title="<%= palettesList[i].blocks[j].name %>" ></a>
+                            </div>
+                            <% } %>
+                        </div>
+                        <% if (palettesList[i]["saved"] == "True") { %>
+                            <span class="remove-wrapper">
+                                <input class="removeBtn" value="Remove" type="button" onclick="removeClick(<%= JSON.stringify(palettesList[i]) %>)">
+                            </span>
+                        <%  } else {%>
+                            <span class="save-wrapper">
+                                <input class="saveBtn" type="button"  value="Save" onclick="saveClick(<%= JSON.stringify(palettesList[i]) %>)">
+                            </span>
+                        <% } %>
+                    </div>
+                <% }} else { %>
+                <div class="no-palettes">
+                    <h2>Uh oh! No palettes were found with that search.</h2>
+                </div>
+                <% } %>
+            </div>
+            <div class="search-wrapper">
+                <div class="search">
+                    <h1>Search</h1>
+                    <form class="searchbar" action="/palettes" method="GET" >
+                        <input class="searchbar-bar" type="text" placeholder="Search..." name="search">
+                        <button class="search-icon">
+                            <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/>
+                        </button>
+                    </form>
+                    <div class="search-tags">
+                        <a href="/palettes?search=Blue"><h3>Blue</h3></a>
+                        <a href="/palettes?search=Stone"><h3>Stone</h3></a>
+                        <a href="/palettes?search=Black"><h3>Black</h3></a>
+                        <a href="/palettes?search=White"><h3>White</h3></a>
+                        <a href="/palettes?search=Wood"><h3>Wood</h3></a>
+                        <a href="/palettes?search=Red"><h3>Red</h3></a>
+                        <a href="/palettes?search=Nether"><h3>Nether</h3></a>
+                        <a href="/palettes?search=Glass"><h3>Glass</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('./partials/show'); %>
+        <%- include('./partials/hide'); %>
+    </div>
+</div>
+<%- include('./partials/footer'); %>
