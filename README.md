@@ -13,9 +13,11 @@ Below are images of the website as of August 29, 2021.
 
 # Saved Page
 Saved Page with Saved Palettes
+
 ![savedHTMLSaves](https://user-images.githubusercontent.com/73635827/131243708-8754302d-c231-4a05-820f-a07100017f18.png)
 
 Saved Page without Saved Palettes
+
 ![savedHTMLNoSaves](https://user-images.githubusercontent.com/73635827/131243711-1f9c633e-dd5f-440f-a214-c0a31d03868a.png)
 
 # About Page
@@ -27,3 +29,6 @@ The website includes a few animations as well which are not showcased in the abo
 As of August 29, I have yet to complete the Generate page. The visual aspect has yet to be solidified, as well as the functionality. This page would allow the user to create their own palettes by showing images of Minecraft blocks which they can select to appear in the palette. Then, the user would be able to upload the palette to the database so all users can view it. They would also be able to save the palette to their personal Saved palettes list.
 
 Ultimately, I would love to implement a Member system. Currently, I have the database set so I personally can save and view palettes. However, I am interested in creating a system where multiple users can log in and save their own palettes.
+
+### Disclaimer
+*Again, I do not take credit for the idea of this website. This project is a personal recreation of [this website](https://www.blockpalettes.com/) with the strict intention of learning about web development.*
