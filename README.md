@@ -1,5 +1,5 @@
 # block-palettes
-This is a recreation of a [Minecraft Block Palette generator](https://www.blockpalettes.com/) website. *This website was not my original idea, and I do not take credit for it! I created this rendition for personal use and for the sake of gaining experience.* This recreation allowed me to gain experience with NodeJS, Express, MongoDB and REST API.
+This is a recreation of a [Minecraft Block Palette generator](https://www.blockpalettes.com/) website. *This website was not my original idea, and I do not take credit for it!* This recreation allowed me to gain experience with NodeJS, Express, MongoDB and REST API.
 
 I began this project with the intention of testing my HTML/CSS skills, but then decided to add true functionality by using NodeJS and MongoDB. Using a Python script, I generated 500 random Minecraft block palettes based on color, and uploaded them to a MongoDB collection. Using HTTP requests, I am now able to successfully search, retrieve and even save palettes.
 
@@ -31,4 +31,4 @@ As of August 29, I have yet to complete the Generate page. The visual aspect has
 Ultimately, I would love to implement a Member system. Currently, I have the database set so I personally can save and view palettes. However, I am interested in creating a system where multiple users can log in and save their own palettes.
 
 ### Disclaimer
-*Again, I do not take credit for the idea of this website. This project is a personal recreation of [this website](https://www.blockpalettes.com/) with the strict intention of learning about web development.*
+*Again, I do not take credit for the idea of this website. This project is a personal recreation of [this website](https://www.blockpalettes.com/) with the strict intention of learning about web development and gaining experience.*
