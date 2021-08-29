@@ -1,0 +1,22 @@
+{
+  "name": "blockpalette",
+  "version": "1.0.0",
+  "description": "Block Palette Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Ariana Daris",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.5"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "nodemon": "^2.0.12"
+  }
+}
