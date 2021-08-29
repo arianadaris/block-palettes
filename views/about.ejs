@@ -1,0 +1,29 @@
+<%- include('./partials/header'); %>
+<div class="content-wrapper">
+    <div class="content">
+        <div class="about-wrapper">
+            <div class="about-p">
+                <div class="logo-wrapper">
+                    <img src="images/logo-light.png">
+                    <a href="/"><div class="logo">
+                        <h1 class="about-word">About</h1><h1>Block</h1><h1>Palettes</h1>
+                    </div></a>
+                </div>
+                <p>A website for helping Minecraft builders spend less time picking blocks, and more time placing blocks. Enjoy a mix of selections from our database of block palettes as well as submissions from other builders!</p>
+                <p class="disclaimer">This website is my rendition of a similar Block Palettes website. I wanted to challenge myself recreating websites, and in no way do I claim the idea of this website as my own!</p>
+            </div>
+            <div class="info-wrapper">
+                <div class="db-info">
+                    <h1 class="db-num"><%= number %></h1><h3 class="db-palettes">Palettes In Database</h3>
+                </div>
+                <div class="project-info">
+                    <h2>Project</h2>
+                    <p>This project was built using NodeJS, Express, MongoDB and REST API.</p>
+                    <h5>[ Source Code ]</h5>
+                    <h3>Date Started: 8/5/2021</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('./partials/footer'); %>
