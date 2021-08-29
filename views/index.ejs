@@ -1,0 +1,32 @@
+<%- include('./partials/header'); %>
+<div class="content-wrapper">
+    <div class="content">
+        <div class="header-space"></div>
+        <h1>Featured</h1>
+        <div class="palettes-index">
+            <% for(var i = 0; i < palettesList.length; i++){ %>
+                <div class="palette-wrapper" id="<%= palettesList[i].paletteID %>">
+                    <div class="palette">
+                        <% for(var j = 0; j < 6; j++) { %>
+                        <div class="block">
+                            <a href="/palettes?search=<%= palettesList[i].blocks[j].name %>"><img src="images/blocks/<%= palettesList[i].blocks[j].img %>" title="<%= palettesList[i].blocks[j].name %>" ></a>
+                        </div>
+                        <% } %>
+                    </div>
+                    <% if (palettesList[i]["saved"] == "True") { %>
+                        <span class="remove-wrapper">
+                            <input class="removeBtn" value="Remove" type="button" onclick="removeClick(<%= JSON.stringify(palettesList[i]) %>)">
+                        </span>
+                    <% } else { %>
+                        <span class="save-wrapper">
+                            <input class="saveBtn" value="Save" type="button" onclick="saveClick(<%= JSON.stringify(palettesList[i]) %>)">
+                        </span>
+                    <% } %>
+                </div>
+            <% } %>
+        </div>
+        <%- include('./partials/show'); %>
+        <%- include('./partials/hide'); %>
+    </div>
+</div>
+<%- include('./partials/footer'); %>
