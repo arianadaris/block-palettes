@@ -3,6 +3,14 @@ This is a recreation of a [Minecraft Block Palette generator](https://www.blockp
 
 I began this project with the intention of testing my HTML/CSS skills, but then decided to add true functionality by using NodeJS and MongoDB. Using a Python script, I generated 500 random Minecraft block palettes based on color, and uploaded them to a MongoDB collection. Using HTTP requests, I am now able to successfully search, retrieve and even save palettes.
 
+# Dependencies
+> npm install axios
+> npm install dotenv
+> npm install ejs
+> npm install express
+> npm install mongoose
+
+
 Below are images of the website as of August 29, 2021.
 
 # Home Page
